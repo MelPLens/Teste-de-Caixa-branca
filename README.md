@@ -2,10 +2,10 @@
 
 
 ## Sobre
-O projeto consiste em realizar testes unitários com o JUnit 5 no Eclipse para garantir testes de software em projetos.
+O projeto consiste em realizar testes de caixa branca.
 
 ## Erros
-O projeto consiste em realizar testes unitários com o JUnit 5 no Eclipse para garantir testes de software em projetos.
+Erros observados no código na imagem da imagem abaixo:
 
 ## Utilidade
 Util para verificar possiveis erros no codigo durante o desenvolvimento, documentar erros e criar possiveis soluções.
