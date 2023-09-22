@@ -6,6 +6,9 @@ O projeto consiste em realizar testes de caixa branca.
 
 ## Erros
 Erros observados no código na imagem da imagem abaixo:
+![image](https://github.com/MelPLens/Teste-de-Caixa-branca/assets/99374140/5fb69da6-de5d-4331-9211-dc753f50acc5)
+
+
 
 ## Utilidade
 Util para verificar possiveis erros no codigo durante o desenvolvimento, documentar erros e criar possiveis soluções.
