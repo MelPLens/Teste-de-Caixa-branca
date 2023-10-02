@@ -10,10 +10,6 @@ Esta Branch contém os critérios de Caixa Branca - (Grafo de Fluxo; Complexidad
 
 ## Grafo de Fluxo
 
-## Número de Pontos no código
-Ponto de Entrada: Chamar o método verificarUsuario().
-Ponto de Saída: Retorno do método verificarUsuario().
-
 
 ##  cálculo da complexidade ciclomática
 
