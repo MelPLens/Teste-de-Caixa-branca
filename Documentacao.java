@@ -21,14 +21,14 @@ public class User {
         Connection conn = null;
 
         try {
-            // Carrega o driver do MySQL
+            /* Carrega o driver do MySQL*/
             Class.forName("com.mysql.Driver.Manager").newInstance();
-            // Define a URL de conexão ao banco de dados
+            /* Define a URL de conexão ao banco de dados*/
             String url = "jdbc:mysql://127.0.0.1/test7user=lopes&password=123";
-            // Estabelece a conexão com o banco de dados
+            /* Estabelece a conexão com o banco de dados*/
             conn = DriverManager.getConnection(url);
         } catch (Exception e) {
-            // Manipula exceções relacionadas à conexão com o banco de dados
+            /* Manipula exceções relacionadas à conexão com o banco de dados*/
         }
         return conn;
     }
@@ -42,7 +42,7 @@ public class User {
     /**
      * Método verificarUsuario verifica as credenciais do usuário.
      * Ele monta uma consulta SQL para procurar um usuário com um login e senha correspondentes
-     * no banco de dados e atualiza as variáveis de instância "result" e "nome" de acordo com o resultado.
+     * no banco de dados e atualiza as variáveis de instância "result" e "nome" da public boolean e String de acordo com o resultado.
      *
      * @param login O login do usuário a ser verificado.
      * @param senha A senha do usuário a ser verificada.
@@ -52,23 +52,23 @@ public class User {
         String sql = "";
         Connection conn = conectarBD();
 
-        // Monta a instrução SQL para verificar o usuário
+        /*Monta a instrução SQL para verificar o usuário, como o nome,login e senha*/
         sql += "select nome from usuario";
         sql += "where login = + "'" + login + "'";
         sql += "and senha = + "'" + senha + "'";
 
         try {
             Statement st = conn.createStatement();
-            // Executa a consulta SQL
+            /* Executa a consulta SQL*/
             ResultSet rs = st.executeQuery(sql);
             if (rs.next()) {
-                // Se a consulta retornar algum resultado, atualiza as variáveis
+                /* Se a consulta retornar algum resultado, atualiza as variáveis*/
                 result = true;
                 nome = rs.getString("nome");
             }
         } catch (Exception e) {
-            // Manipula exceções relacionadas à execução da consulta SQL
+            /** Manipula exceções relacionadas à execução da consulta SQL**/
         }
         return result;
     }
-} // fim da classe
+} /** fim da classe**/
